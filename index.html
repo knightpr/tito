@@ -1,5 +1,6 @@
 <!doctype>
 <html>
+
 <head>
     <base href="/">
     <title>TiTo</title>
@@ -15,14 +16,14 @@
     <script src="node_modules/angular2/bundles/angular2.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
     <script src="node_modules/angular2/bundles/http.js"></script>
-
-
     <link rel="stylesheet" href="src/css/app.css">
+   <!--  <link rel="stylesheet" href="node_modules/ng2-material/dist/ng2-material.css">
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/font.css"> -->
 </head>
-<body>
-<my-app>Loading...</my-app>
 
-<script>
+<body>
+    <tito-app>Loading your tito.....</tito-app>
+    <script>
     System.config({
         packages: {
             app: {
@@ -32,7 +33,8 @@
         }
     });
     System.import('app/boot')
-            .then(null, console.error.bind(console));
-</script>
+        .then(null, console.error.bind(console));
+    </script>
 </body>
+
 </html>
